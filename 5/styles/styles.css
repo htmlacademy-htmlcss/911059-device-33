@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "Rubic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubic/rubic-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubic/rubic-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubic";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/rubic/rubic-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/relawey-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubic", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #ffffff;
+  color: #444444;
+}
+
+a {
+  color: inherit
+}
+
+.list {
+  list-style-type: none;
+}
+
+.main-header {
+  background: #FFE17F;
+  color: #000000;
+}
+
+.header-top-menu-link {
+  color: #000000;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-nav-link {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.drop-down-link {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+}
+
+.navigation-link {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.slider-title {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.slider-text {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  text-align: right;
+}
+
+.details-item {
+  font-size: 36px;
+  font-style: normal;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: right;
+  list-style-type: none;
+}
+
+.details-item-info {
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: right;
+}
+
+.subsection-item-link {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.services-slider-wrap {
+  background: #F0F0F0;
+}
+
+.service-title {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+}
+
+.service-description {
+  color: #444444;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.additional-info-title {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.about-title {
+  font-family: "Relaway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.delivery-method-info-text {
+  font-weight: 400;
+}
+
+.delivery-method-item {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  list-style-type: none;
+}
+
+.delivery-method-item::before {
+  color: #FFC700;
+  content: "\2022";
+  padding-right: 20px;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.mailing {
+  background: #F0F0F0;
+}
+
+.mailing-title {
+  font-family: "Relaway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.page-footer {
+  background: #444444;
+}
+
+.footer-address-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-address-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-navigation-link {
+  font-family: "Relaway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-contacts-address-phone {
+  color: #FFFFFF;
+  text-decoration-line: underline;
+  font-size: 16px;
+}
+
+/* Страница каталога */
+
+.filter-and-catalog-wrap {
+  background: #F0F0F0;
+}
+
+.page-title {
+  font-family: "Relaway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.breadcrumbs-item-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.title-width {
+  font-family: "Relaway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "Relaway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.Popular-products {
+  color: #000000;
+}
+
+.filter-text {
+  line-height: 20px;
+  color: #000000;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.filter-name {
+  line-height: 20px;
+  color: #000000;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.catalog-item-link {
+  line-height: 20px;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.catalog-item-price {
+  line-height: 21px;
+  color: #444444;
+  text-align: right;
+}
