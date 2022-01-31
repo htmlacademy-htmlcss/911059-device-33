@@ -34,36 +34,29 @@ body {
   font-family: "Rubic", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  background-color: #fff;
-  color: #444;
-
+  background-color: #ffffff;
+  color: #444444;
 }
-
 
 a {
   color: inherit
 }
 
-.main-header {
-  background: #FFE17F;
-  color: #000;
-
-}
-
-.header-top-menu-item {
+.list {
   list-style-type: none;
 }
 
+.main-header {
+  background: #FFE17F;
+  color: #000000;
+}
+
 .header-top-menu-link {
-  color: #000;
+  color: #000000;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
   text-align: center;
-}
-
-.main-navigation-item {
-  list-style-type: none;
 }
 
 .main-nav-link {
@@ -71,17 +64,12 @@ a {
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
-}
-
-.drop-down-menu-column {
-  list-style-type: none;
 }
 
 .drop-down-link {
@@ -89,7 +77,7 @@ a {
   font-style: normal;
   line-height: 18px;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   text-align: center;
   font-weight: 400;
 }
@@ -99,18 +87,12 @@ a {
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
-
-}
-
-.navigation-item {
-  list-style-type: none;
 }
 
 .slider-title {
@@ -118,12 +100,11 @@ a {
   font-style: normal;
   font-size: 50px;
   line-height: 50px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 800;
   text-align: right;
   text-transform: uppercase;
-
 }
 
 .slider-text {
@@ -131,14 +112,13 @@ a {
   font-style: normal;
   font-weight: 400;
   text-align: right;
-
 }
 
 .details-item {
   font-size: 36px;
   font-style: normal;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 400;
   text-align: right;
@@ -151,18 +131,13 @@ a {
   text-decoration: none;
   font-weight: 400;
   text-align: right;
-
-}
-
-.subsection-item {
-  list-style-type: none;
 }
 
 .subsection-item-link {
   font-family: "Relaway", sans-serif;
   font-style: normal;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -177,13 +152,13 @@ a {
   font-style: normal;
   font-size: 50px;
   line-height: 50px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   text-align: center;
 }
 
 .service-description {
-  color: #444;
+  color: #444444;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -194,7 +169,7 @@ a {
   font-style: normal;
   font-size: 20px;
   line-height: 23px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
@@ -205,7 +180,7 @@ a {
   font-family: "Relaway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
 }
 
@@ -213,15 +188,11 @@ a {
   font-weight: 400;
 }
 
-.delivery-method-list {
-  list-style-type: none;
-}
-
 .delivery-method-item {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: #000;
+  color: #000000;
   list-style-type: none;
 }
 
@@ -234,7 +205,13 @@ a {
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+}
 
+.contacts-address-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
 }
 
 .mailing {
@@ -245,7 +222,7 @@ a {
   font-family: "Relaway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
 }
 
@@ -256,11 +233,15 @@ a {
 .footer-address-text {
   font-size: 16px;
   line-height: 19px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
-.footer-navigation-item {
-  list-style-type: none;
+.footer-address-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .footer-navigation-link {
@@ -271,11 +252,11 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .footer-contacts-address-phone {
-  color: #FFF;
+  color: #FFFFFF;
   text-decoration-line: underline;
   font-size: 16px;
 }
@@ -290,18 +271,14 @@ a {
   font-family: "Relaway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
-}
-
-.breadcrumbs-item {
-  list-style-type: none;
 }
 
 .breadcrumbs-item-link {
   font-size: 16px;
   line-height: 19px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -309,7 +286,7 @@ a {
   font-family: "Relaway", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -319,34 +296,33 @@ a {
   font-family: "Relaway", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
 }
 
 .Popular-products {
-  color: #000;
+  color: #000000;
 }
 
 .filter-text {
   line-height: 20px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 .filter-name {
   line-height: 20px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 .catalog-item-link {
   line-height: 20px;
-  color: #000;
+  color: #000000;
   font-weight: 700;
   letter-spacing: -0.02em;
   text-decoration: none;
@@ -354,6 +330,6 @@ a {
 
 .catalog-item-price {
   line-height: 21px;
-  color: #444;
+  color: #444444;
   text-align: right;
 }
