@@ -150,25 +150,21 @@ body {
 }
 
 /* слайдер */
-.slider-title {
-  font-family: "Relaway", sans-serif;
-  font-style: normal;
+
+.goods-tagline {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
-  text-decoration: none;
   font-weight: 800;
-  text-align: right;
-  text-transform: uppercase;
+  color: #000000;
 }
-
-.slider-text {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  text-align: right;
+.goods-feature-item {
+  font-size: 16px;
 }
-
+.goods-feature-metric {
+  font-size: 36px;
+  color: #000000;
+}
 /* Меню */
 .user-navigation-link {
   color: #000000;
@@ -182,7 +178,7 @@ body {
 }
 
 .navigation-list.main-navigation {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .catalog-expand-button-container .button {
@@ -306,16 +302,9 @@ body {
 
 /* Подкатегории каталога товаров */
 .subsection-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -324,7 +313,6 @@ body {
 }
 
 .subsection-item {
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 160px;
   min-height: 245px;
@@ -380,68 +368,58 @@ body {
   content: "";
   width: 160px;
   height: 160px;
-  background-color: #FFE17F;
-}
-
-.catalog-subsection-title::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  content: "";
-  width: 160px;
-  height: 160px;
+  background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.virtual-reality .catalog-subsection-title::after {
+
+.virtual-reality .catalog-subsection-title::before{
   background-image: url("../images/advantages/virtual.svg");
 }
 
-.monopods .catalog-subsection-title::after {
+.monopods .catalog-subsection-title::before {
   background-image: url("../images/advantages/monopods.svg");
   background-position: bottom center;
 }
 
-.camera .catalog-subsection-title::after {
+.camera .catalog-subsection-title::before {
   background-image: url("../images/advantages/camera.svg");
 }
 
-.fitnes .catalog-subsection-title::after {
+.fitnes .catalog-subsection-title::before {
   background-image: url("../images/advantages/fitnes.svg");
 }
 
-.smart-watches .catalog-subsection-title::after {
+.smart-watches .catalog-subsection-title::before {
   background-image: url("../images/advantages/smart-watches.svg");
 }
 
-.quadrokopters .catalog-subsection-title::after {
+.quadrokopters .catalog-subsection-title::before {
   background-image: url("../images/advantages/quadrokopters.svg");
 }
 
 /* Информация */
 .additional-info {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   margin-bottom: 70px;
 }
 
 #additional-square {
   width: 125px;
   height: 100px;
-  background: #FFE17F;
+  background: #ffe17f;
   background-image: url("../images/additional/additional-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .additional-images {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   padding-right: 41.5px;
 }
 
