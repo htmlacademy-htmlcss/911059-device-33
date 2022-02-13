@@ -100,7 +100,7 @@ body {
 }
 
 .navigation-list.cart-navigation {
-  justify-content: end;
+  justify-content: flex-end;
   max-width: 240px;
 }
 
