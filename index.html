@@ -14,11 +14,9 @@
   <div class="container">
     <header class="page-header">
       <div class="page-header-wrap">
-        <div class="page-header-logo">
-          <a class="logo-link">
-            <img src="images/logo-header.svg" width="145" height="36" alt="Логотип device." />
+          <a class="page-header-logo header-logo">
+            <img href="index.html" src="images/logo-header.svg" width="145" height="36" alt="Логотип device." />
           </a>
-        </div>
         <div class="user-nav">
           <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search">Поиск</label>
@@ -30,19 +28,19 @@
           <ul class="user-nav-list">
             <li class="user-nav-item user-nav-item--login">
               <a class="user-nav-link user-nav-link--login" href="#">
-                <span class="user-icon"></span>
+                <i class="user-icon"></i>
                 Войти
               </a>
             </li>
             <li class="user-nav-item">
               <a class="user-nav-link" href="#">
-                <span class="compare-icon"></span>
+                <i class="compare-icon"></i>
                 Сравнить
               </a>
             </li>
             <li class="user-nav-item">
               <a class="user-nav-link" href="#">
-                <span class="cart-icon"></span>
+                <i class="cart-icon"></i>
                 Корзина
               </a>
             </li>
@@ -103,8 +101,7 @@
   </div>
   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин &quot;Девайс&quot;</h1>
-    <div class="container">
-      <section class="preview">
+      <section class="preview container">
         <h2 class="visually-hidden">Превью устройства</h2>
         <div class="preview-wrap">
           <div class="preview-controls">
@@ -152,8 +149,7 @@
                   лазером, замаскированным под стандартную камеру.
                 </p>
                 <a class="slider-content-link btn" href="#">Подробнее</a>
-                <div class="slide-property-row">
-                  <ul class="property-device-list">
+                  <ul class="property-device-list slide-property-row">
                     <li class="property-device-item">
                       <b class="property-device-name">800 м</b>
                       <span class="property-device-desc">Дальность полета</span>
@@ -164,7 +160,6 @@
                       <span class="property-device-desc">Радиус поражения</span>
                     </li>
                   </ul>
-                </div>
               </div>
             </div>
 
@@ -206,7 +201,7 @@
                 <div class="slide-property-row">
                   <ul class="property-device-list">
                     <li class="property-device-item">
-                      <b class="property-device-name">8,5 мм</b>
+                      <b class="property-device-name">8,5 м</b>
                       <span class="property-device-desc">Длина палки</span>
                     </li>
 
@@ -226,7 +221,6 @@
           </div>
         </div>
       </section>
-    </div>
     <div class="container">
       <section class="category">
         <h2 class="visually-hidden">Список категорий каталога</h2>
@@ -270,9 +264,8 @@
         </ul>
       </section>
     </div>
-    <section class="services">
+    <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="container">
         <div class="services-wrap">
           <div class="services-nav">
             <ul class="services-nav-list">
@@ -302,7 +295,6 @@
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </div>
-
             <div class="services-desc-item">
               <h2 class="services-desc-item-title title">Гарантия</h2>
               <p class="services-desc-text">
@@ -311,7 +303,6 @@
                 же.
               </p>
             </div>
-
             <div class="services-desc-item">
               <h2 class="services-desc-item-title title">Кредит</h2>
               <p class="services-desc-text">
@@ -322,13 +313,12 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <div class="container" id="delivery">
       <a class="delivery">
-        <span class="delivery-icon"></span>
+        <i class="delivery-icon"></i>
         <p class="delivery-text">Доставим редкий товар под заказ</p>
-        <span class="delivery-info"></span>
+        <i class="delivery-info"></i>
       </a>
     </div>
     <div class="container">
@@ -410,7 +400,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="footer-logo">
-        <a class="logo-link" href="index.html">
+        <a class="footer-logo-link" href="index.html">
           <img src="images/logo-footer.svg" width="145" height="36" alt="Логотип device." />
         </a>
       </div>
@@ -443,7 +433,7 @@
         </a>
       </div>
       <section class="footer-social">
-        <span class="footer-line"></span>
+        <i class="footer-line"></i>
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -468,7 +458,6 @@
                   <path d="m20,22c1.1046,0 2,-0.8954 2,-2s-0.8954,-2 -2,-2s-2,0.8954 -2,2s0.8954,2 2,2z" fill="#444" />
                 </g>
               </svg>
-
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
