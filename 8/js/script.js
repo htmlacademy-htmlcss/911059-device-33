@@ -1,11 +1,10 @@
 
 // BTN CATALOG TOGGLE
 const btnToggleCatalog = document.querySelector(".catalog-toggler-btn");
-const catalogNav = document.querySelector(".catalog-toggler-nav");
 
 // BTN CATALOG ACTION
 btnToggleCatalog.addEventListener("click", clickBtnCatalog);
-function clickBtnCatalog(evt){
+function clickBtnCatalog(){
   btnToggleCatalog.classList.toggle("active");
 }
 
@@ -15,6 +14,7 @@ const btnSliderNext = document.querySelector(".slider-btn-next");
 const slides = document.querySelectorAll(".slide");
 const sliderCounter = document.querySelector(".slider-counter");
 const btnSliderPagination = document.querySelectorAll(".slider-pagination-btn");
+let slideIndex;
 
 /* Index of the current element */
 function getActiveSlideIndex() {
@@ -45,7 +45,7 @@ btnSliderPagination.forEach((element, index) => {
 
 /*Choosing the next slide*/
 function setSlide(n) {
-  slideIndex = (n + slides.length) % slides.length;
+   slideIndex = (n + slides.length) % slides.length;
   setActiveSlideElement();
   updateSlideText();
   setActiveSlideDot();
@@ -63,6 +63,7 @@ function setActiveSlideDot(){
   }
   btnSliderPagination[slideIndex].classList.add("slider-pagination-btn--current");
 }
+
 /*Chooses an active slide*/
 function setActiveSlideElement(){
   for (let slide of slides) {
@@ -76,6 +77,7 @@ function setActiveSlideElement(){
 const serviceItem = document.querySelectorAll(".services-nav-item");
 const serviceBtn = document.querySelectorAll(".services-nav-btn");
 const serviceDesc = document.querySelectorAll(".services-desc-item");
+let serviceIndex;
 
 /*Choosing the next item*/
 function showService(n) {
@@ -83,6 +85,7 @@ function showService(n) {
   setActiveServiceItem();
 setActiveServiceBtn();
 }
+
 /*Chooses an active item*/
 function setActiveServiceItem(){
   for (let desc of serviceDesc) {
@@ -90,6 +93,7 @@ function setActiveServiceItem(){
 }
 serviceDesc[serviceIndex].classList.add("service--show");
 }
+
 /*Chooses an active btn*/
 function setActiveServiceBtn(){
 for (let service of serviceItem) {
@@ -97,12 +101,14 @@ for (let service of serviceItem) {
 }
 serviceItem[serviceIndex].classList.add("services-nav-item--active");
 }
+
 /* Swipe btns*/
 serviceBtn.forEach((element, index) => {
   element.addEventListener("click", () => {
     showService(index);
     });
  })
+
 
  // POPUP
  const btnDelivery = document.querySelector(".delivery");
@@ -123,6 +129,7 @@ serviceBtn.forEach((element, index) => {
    popup.classList.toggle("open");
  }});
 
+
   // POPUP COUNTER
     const quantityMinus = document.querySelector(".number-product-minus");
     const quantityPlus = document.querySelector(".number-product-plus");
@@ -141,10 +148,27 @@ serviceBtn.forEach((element, index) => {
   }
 
     function valueMinus()  {
-       if (number >= 2) {
+       if (number >= 1) {
          number--;
          quantityNum.value = number;
       }
   };
+
+
+  // POPOVER
+  const popoverBtn = document.querySelectorAll(".popover-cart-item-btn");
+  const cartItems =  document.querySelectorAll(".popover-cart-item");
+
+/* Del item*/
+function getActiveCartItems(n) {
+  cartItems[n].remove();
+}
+
+/*Choosing del item*/
+popoverBtn.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    getActiveCartItems(index);
+    });
+ });
 
 
