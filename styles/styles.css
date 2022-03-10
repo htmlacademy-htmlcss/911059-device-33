@@ -31,6 +31,7 @@
   font-display: swap;
 }
 
+
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
@@ -67,7 +68,6 @@
   --status-warning: #fd912e;
   --status-success: #08af00;
 }
-
 
 *,
 *::before,
@@ -119,6 +119,7 @@ img {
   flex-grow: 1;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -143,6 +144,7 @@ img {
   cursor: default;
   opacity: 1;
 }
+
 
 .btn {
   display: block;
@@ -192,6 +194,7 @@ img {
   opacity: 0.3;
 }
 
+
 .btn-search {
   border: 2px solid var(--basic-black);
   border-radius: 0 50px 50px 0;
@@ -218,6 +221,7 @@ img {
   outline: 2px solid var(--additional-violet);
   outline-offset: 2px;
 }
+
 
 .product-btn-more {
   font-family: "Raleway", sans-serif;
@@ -309,7 +313,7 @@ img {
   opacity: 1;
 }
 
-.catalog-toggler-btn.active + .catalog-toggler-nav {
+.catalog-toggler-btn.active+.catalog-toggler-nav {
   opacity: 1;
   visibility: visible;
 }
@@ -323,6 +327,7 @@ img {
 .catalog-toggler-btn:focus-visible {
   outline: 2px solid var(--additional-violet);
 }
+
 
 .btn-newsletter-email {
   font-family: "Raleway", sans-serif;
@@ -348,15 +353,13 @@ img {
   opacity: 0.3;
 }
 
-
 .slider-btn-prev,
 .slider-btn-next {
   width: 20px;
   height: 60px;
   outline: none;
   border: none;
-  background: transparent url("../images/icon/preview/arrow.svg") no-repeat
-    center;
+  background: transparent url("../images/icon/preview/arrow.svg") no-repeat center;
   cursor: pointer;
 }
 
@@ -418,7 +421,6 @@ img {
   background-color: var(--basic-black);
 }
 
-/*!=================-HEADER-=================!*/
 .page-header {
   min-height: 186px;
   background-color: var(--additional-yellow);
@@ -458,7 +460,6 @@ img {
   padding-bottom: 30px;
 }
 
-/* FORM SEARCH */
 .form-search {
   position: relative;
   display: flex;
@@ -505,7 +506,6 @@ img {
   outline-offset: 2px;
 }
 
-/* NAVIGATION */
 .user-nav-list {
   display: flex;
   list-style-type: none;
@@ -533,7 +533,7 @@ img {
   visibility: visible;
 }
 
-.user-nav-link:focus ~ .popover-cart {
+.user-nav-link:focus~.popover-cart {
   opacity: 1;
   visibility: visible;
 }
@@ -927,14 +927,14 @@ img {
   opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled ~ .control-label {
+.control-input:disabled+.control-mark,
+.control-input:disabled~.control-label {
   pointer-events: none;
   cursor: default;
   opacity: 0.1;
 }
 
-.control-input:focus-visible + .control-mark {
+.control-input:focus-visible+.control-mark {
   outline-offset: 2px;
   outline: 2px solid var(--additional-violet);
 }
@@ -949,7 +949,7 @@ img {
   border-radius: 3px;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -970,7 +970,7 @@ img {
   display: none;
 }
 
-.control-input[type="radio"] + .control-mark::before {
+.control-input[type="radio"]+.control-mark::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -982,19 +982,19 @@ img {
   display: none;
 }
 
-.control-input[type="radio"]:checked + .control-mark {
+.control-input[type="radio"]:checked+.control-mark {
   border-color: var(--basic-black);
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked+.control-mark::before {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked+.control-mark {
   border-color: var(--basic-black);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   display: block;
 }
 
@@ -1009,8 +1009,7 @@ img {
   border: none;
   cursor: pointer;
   appearance: none;
-  background: transparent url("../images/icon/select.svg") no-repeat right top
-    12px;
+  background: transparent url("../images/icon/select.svg") no-repeat right top 12px;
   padding-right: 41px;
   margin-right: 12px;
   font: inherit;
@@ -1164,7 +1163,7 @@ img {
   opacity: 0.5;
 }
 
-.product-card-link:active ~ .product-card-btn-more::after {
+.product-card-link:active~.product-card-btn-more::after {
   background-color: var(--additional-yellow-hover);
 }
 
@@ -1691,7 +1690,6 @@ img {
   padding-bottom: 70px;
 }
 
-
 .about-us {
   padding-right: 18px;
   width: 44.8%;
@@ -1747,7 +1745,6 @@ img {
   background-color: var(--additional-yellow-hover);
   margin-right: 26px;
 }
-
 
 .contacts {
   padding-left: 65px;
@@ -2180,11 +2177,11 @@ img {
   outline: 2px solid var(--status-error);
 }
 
-.modal-input[id="user-email"]:focus:invalid ~ .email-invalid {
+.modal-input[id="user-email"]:focus:invalid~.email-invalid {
   opacity: 1;
 }
 
-.modal-input[id="user-name"]:focus:invalid ~ .name-invalid {
+.modal-input[id="user-name"]:focus:invalid~.name-invalid {
   opacity: 1;
 }
 
@@ -2195,21 +2192,21 @@ img {
   color: var(--basic-black);
 }
 
-.modal-input[id="user-email"] ~ .modal-input-icon,
-.modal-input[id="user-name"] ~ .modal-input-icon {
+.modal-input[id="user-email"]~.modal-input-icon,
+.modal-input[id="user-name"]~.modal-input-icon {
   position: absolute;
   top: 50%;
   right: 21px;
   opacity: 0.3;
 }
 
-.modal-input[id="user-email"] ~ .modal-input-icon {
+.modal-input[id="user-email"]~.modal-input-icon {
   width: 15px;
   height: 12px;
   background: url("../images/icon/header/email.svg") no-repeat center;
 }
 
-.modal-input[id="user-name"] ~ .modal-input-icon {
+.modal-input[id="user-name"]~.modal-input-icon {
   width: 13px;
   height: 12px;
   background: url("../images/icon/header/user.svg") no-repeat center;
@@ -2239,15 +2236,14 @@ img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: var(--additional-yellow) url("../images/icon/delivery/info.svg")
-    no-repeat center;
+  background: var(--additional-yellow) url("../images/icon/delivery/info.svg") no-repeat center;
   margin-left: 8px;
   border: none;
   cursor: pointer;
 }
 
-.number-product-info:hover + .number-product-info-text,
-.number-product-info:focus + .number-product-info-text {
+.number-product-info:hover+.number-product-info-text,
+.number-product-info:focus+.number-product-info-text {
   display: block;
 }
 
@@ -2332,6 +2328,7 @@ img {
   border: none;
   background-color: transparent;
 }
+
 
 .popover-cart {
   position: absolute;
