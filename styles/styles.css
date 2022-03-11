@@ -273,6 +273,7 @@ img {
   display: flex;
   align-items: center;
   padding: 0;
+  width: max-content;
 }
 
 .catalog-toggler-icon {
@@ -622,8 +623,16 @@ img {
   display: flex;
   align-items: center;
   list-style-type: none;
+  margin: 0 -13.5px;
+  padding: 0;
+  flex-wrap: inherit;
+}
+
+.main-nav-bottom {
+  display: flex;
   flex-wrap: wrap;
-  margin: 0 -22.5px;
+  width: auto;
+  margin: 0px;
   padding: 0;
 }
 
@@ -1893,11 +1902,13 @@ img {
 
 .footer-menu {
   margin-right: auto;
+  width: 650px;
   align-self: flex-start;
 }
 
 .footer-nav-list {
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .footer-nav-item {
@@ -1926,8 +1937,9 @@ img {
 
 .footer-contacts-phone {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 25px;
   margin-bottom: 7px;
+  width: auto;
 }
 
 .footer-nav-item:hover .footer-nav-link {
