@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="icon" href="images/favicon/favicon.ico" />
-  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="images/favicon/favicon.png" sizes="32x32" type="image/x-icon" />
   <title>Каталог</title>
 </head>
 
@@ -46,25 +46,32 @@
                 <span class="cart-counter">2</span>
                 Корзина
               </a>
+
               <div class="popover-cart">
                 <ul class="popover-cart-list">
                   <li class="popover-cart-item">
                     <a class="popover-cart-item-link" href="#">
-                      <img src="images/product/for-cart/product-1-small.jpg" alt="" width="39" height="44" />
+                      <img src="images/product/for-cart/product-1-small.jpg" alt="Любительская селфи-палка" width="39"
+                        height="44" />
                       <p class="popover-cart-item-title">
                         Любительская селфи-палка
                       </p>
                     </a>
-                    <button class="popover-cart-item-btn" type="button"></button>
+                    <button class="popover-cart-item-btn" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
                   </li>
                   <li class="popover-cart-item">
                     <a class="popover-cart-item-link" href="#">
-                      <img src="images/product/for-cart/product-2-small.jpg" alt="" width="39" height="44" />
+                      <img src="images/product/for-cart/product-2-small.jpg" alt="Профессиональная селфи-палка"
+                        width="39" height="44" />
                       <p class="popover-cart-item-title">
                         Профессиональная селфи-палка
                       </p>
                     </a>
-                    <button class="popover-cart-item-btn" type="button"></button>
+                    <button class="popover-cart-item-btn" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
                   </li>
                 </ul>
 
@@ -97,7 +104,6 @@
                 Каталог товаров
                 <span class="catalog-toggler-icon"></span>
               </button>
-
               <div class="catalog-toggler-nav">
                 <ul class="nav-catalog-list nav-catalog-list-monopods">
                   <li class="nav-catalog-item">
@@ -111,32 +117,32 @@
                     </a>
                   </li>
                   <li class="nav-catalog-item">
-                    <a href="blank.html" class="nav-catalog-link">Экшн-камеры</a>
+                    <a href="#" class="nav-catalog-link">Экшн-камеры</a>
                   </li>
                 </ul>
                 <ul class="nav-catalog-list nav-catalog-list-bracelets">
                   <li class="nav-catalog-item">
-                    <a href="blank.html" class="nav-catalog-link">Фитнес-браслеты</a>
+                    <a href="#" class="nav-catalog-link">Фитнес-браслеты</a>
                   </li>
                   <li class="nav-catalog-item">
-                    <a href="blank.html" class="nav-catalog-link">Умные часы</a>
+                    <a href="#" class="nav-catalog-link">Умные часы</a>
                   </li>
                 </ul>
                 <ul class="nav-catalog-list nav-catalog-list-quadrocopters">
                   <li class="nav-catalog-item">
-                    <a href="blank.html" class="nav-catalog-link">Квадрокоптеры</a>
+                    <a href="#" class="nav-catalog-link">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="main-nav-item">
-              <a class="main-nav-link" href="blank.html">Доставка</a>
+              <a class="main-nav-link" href="#">Доставка</a>
             </li>
             <li class="main-nav-item">
-              <a class="main-nav-link" href="blank.html">Гарантия</a>
+              <a class="main-nav-link" href="#">Гарантия</a>
             </li>
             <li class="main-nav-item">
-              <a class="main-nav-link" href="blank.html">Контакты</a>
+              <a class="main-nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -144,7 +150,7 @@
     </header>
   </div>
   <main class="main-inner">
-    <!-- !INNER-HEADER -->
+
     <div class="container">
       <h1 class="visually-hidden">Каталог</h1>
       <header class="inner-header" id="#monopods">
@@ -154,7 +160,7 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="blank.html">Каталог товаров</a>
+            <a class="breadcrumbs-link" href="№">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link link--disabled">Моноподы для селфи</a>
@@ -162,11 +168,11 @@
         </ul>
       </header>
     </div>
-    <!-- !CATALOG -->
+
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <div class="container">
-        <!-- *catalog-filter -->
+
         <div class="wrap-catalog">
           <section class="catalog-filter">
             <h3 class="catalog-filter-title">Фильтр:</h3>
@@ -191,15 +197,15 @@
                   </div>
                   <div class="range-wrapper-inputs">
                     <label class="price-label" for="catalog-filter-min-price">
-                      от
+
                       <input class="price-value" type="number" name="min-price" id="catalog-filter-min-price"
-                        value="0" />
+                        placeholder="от 0" style="width: 45px" />
                     </label>
 
                     <label class="price-label" for="catalog-filter-max-price">
-                      до
+
                       <input class="price-value" type="number" name="max-price" id="catalog-filter-max-price"
-                        value="5000" style="width: 45px" />
+                        placeholder="до 5000" style="width: 60px" />
                     </label>
                   </div>
                 </div>
@@ -271,9 +277,9 @@
               </button>
             </form>
           </section>
-          <!-- *catalog-content-wrap -->
+
           <div class="catalog-content-wrap">
-            <!-- *catalog-sorter -->
+
             <div class="catalog-sorter">
               <h3 class="catalog-sorter-title">сортировка:</h3>
               <select class="select-control" aria-label="Сортировка">
@@ -294,7 +300,7 @@
                 </li>
               </ul>
             </div>
-            <!-- *product-content -->
+
             <div class="product-content">
               <ul class="product-list">
                 <li class="product-card">
@@ -362,7 +368,7 @@
               </ul>
               <button class="product-btn-more">Загрузить ещё</button>
               <div class="pagination">
-                <a href="#" class="pagination-link-btn pagination--disabled">
+                <a href="#" class="pagination-link-btn">
                   Назад
                 </a>
                 <ul class="pagination-list">
@@ -390,7 +396,7 @@
       </div>
     </section>
   </main>
-  <!-- !FOOTER -->
+
   <footer class="page-footer">
     <div class="container">
       <div class="footer-logo">
