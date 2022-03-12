@@ -103,7 +103,7 @@ body.lock {
 img {
   max-width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 
@@ -196,6 +196,10 @@ img {
 
 
 .btn-search {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   border: 2px solid var(--basic-black);
   border-radius: 0 50px 50px 0;
   background-color: transparent;
@@ -486,6 +490,10 @@ img {
 }
 
 .input-search {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   border: 2px solid var(--basic-black);
   min-height: 40px;
   border-radius: 50px 0 0 50px;
@@ -703,6 +711,10 @@ img {
 }
 
 .nav-catalog-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -896,13 +908,17 @@ img {
 }
 
 .price-value {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
   width: 30px;
   padding: 0 5px;
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   color: var(--alfa3-black);
 }
 
@@ -913,7 +929,7 @@ img {
 .price-value::-webkit-outer-spin-button,
 .price-value::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1036,8 +1052,8 @@ img {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent url("../images/icon/select.svg") no-repeat right top 12px;
   padding-right: 41px;
   margin-right: 12px;
@@ -1252,6 +1268,10 @@ img {
 }
 
 .pagination-link-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
   display: block;
   text-decoration: none;
   background-color: var(--basic-light);
@@ -1350,7 +1370,9 @@ img {
 
 .slider-content-pagination {
   list-style-type: none;
-  margin: 215px 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 150px;
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -1405,6 +1427,10 @@ img {
 }
 
 .slide-content-desc {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 18px;
   margin-bottom: 50px;
 }
 
@@ -1628,91 +1654,136 @@ img {
 }
 
 
-.delivery {
+.delivery_description_none {
+  display: none;
+}
+
+.delivery_article {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.delivery_article:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+
+.delivery_article_link {
+  display: flex;
+  background-color: rgba(255, 225, 127, 1);
+  padding: 35px 39px;
+  padding-bottom: 35px;
+  border: none;
+}
+
+.delivery_article_link:hover {
+  background-color: #ffc700;
+}
+
+.delivery_article_link:focus {
+  background-color: rgba(255, 225, 127, 1);
+  outline: none;
+}
+
+.delivery_article_description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 70px 0;
-  background-color: var(--basic-light);
-  cursor: pointer;
-}
-
-.delivery:hover .delivery-icon {
-  background-color: var(--additional-yellow-hover);
-}
-
-.delivery:hover .delivery-info::before {
-  opacity: 1;
-}
-
-.delivery:active {
-  opacity: 0.3;
-}
-
-.delivery:focus-visible {
-  outline: 2px solid var(--additional-violet);
-}
-
-.delivery-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 100px;
-  background-color: var(--additional-yellow);
-  transition: background-color 150ms ease-in-out;
-  flex-wrap: 0;
-  flex-shrink: 0;
-}
-
-.delivery-icon::after {
-  content: "";
-  display: block;
-  width: 47px;
-  height: 31px;
-  background: url("../images/icon/delivery/car.svg");
-}
-
-.delivery-text {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--basic-black);
-  margin: 0 auto;
+  color: #000000;
+  margin: 0;
+  width: 1160px;
+  padding: 0 150px;
+  min-height: 100px;
+  background-color: #F0F0F0;
 }
 
-.delivery-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.delivery_article_description::before {
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  background-color: #FFE17F;
+  background-image: url("../images/icon/delivery/car.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery_article_description::after {
+  position: absolute;
+  content: "";
   width: 40px;
   height: 40px;
-  background-color: var(--light-gray);
+  font-size: 24px;
+  right: 42px;
+  top: 30px;
+  background-color: rgba(220, 220, 220, 1);
+  background-image: url("../images/icon/delivery/info.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px top 14px;
   border-radius: 50%;
-  margin: 0 42.5px;
-  flex-wrap: 0;
-  flex-shrink: 0;
+  opacity: 0.4;
 }
 
-.delivery-info::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 20px;
-  background: url("../images/icon/delivery/info.svg") no-repeat center;
+
+.delivery_article:hover .delivery_article_description::before {
+  background-color: #FFC700;
+}
+
+.delivery_article:hover .delivery_article_description::after {
+  opacity: 1;
+}
+
+.delivery_article_description:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.delivery_article_description:active {
+  background-color: #ffffff;
   opacity: 0.3;
 }
 
-.delivery,
-.delivery-info::before {
-  transition: opacity 150ms ease-in-out;
+.delivery_article_button_wrapper {
+  background-color: #F0F0F0;
+  padding: 29px 42px;
 }
 
+.delivery_article_button {
+  border: none;
+  background-color: rgba(220, 220, 220, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.delivery_article_button:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.delivery_article_button:focus {
+  outline: none;
+}
+
+.delivery_article_description:active+.delivery_article_button_wrapper {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
 
 .information {
   display: flex;
@@ -1860,6 +1931,10 @@ img {
 }
 
 .newsletter-input {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   border: none;
   outline: none;
   border-bottom: 3px solid var(--input-gray);
@@ -1929,6 +2004,7 @@ img {
 
 .footer-address {
   font-style: normal;
+  line-height: 20px;
   margin: 0;
   margin-right: 112px;
   width: 239px;
@@ -1973,7 +2049,7 @@ img {
 
 .footer-contacts-phone {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
   margin-bottom: 7px;
   width: auto;
 }
@@ -2183,6 +2259,10 @@ img {
 }
 
 .modal-input {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   padding: 20px;
   outline: none;
   border: none;
@@ -2191,15 +2271,15 @@ img {
 
 .modal-input-number {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   pointer-events: none;
 }
 
 .modal-input-number::-webkit-outer-spin-button,
 .modal-input-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .modal-input:hover {
@@ -2224,6 +2304,7 @@ img {
 
 .modal-input[id="user-email"]:focus:invalid,
 .modal-input[id="user-name"]:focus:invalid,
+.modal-input[id="product"]:focus:invalid,
 .modal-input[id="number-product"]:focus:invalid {
   outline: 2px solid var(--status-error);
 }
@@ -2233,6 +2314,10 @@ img {
 }
 
 .modal-input[id="user-name"]:focus:invalid~.name-invalid {
+  opacity: 1;
+}
+
+.modal-input[id="product"]:focus:invalid~.adress-invalid {
   opacity: 1;
 }
 
@@ -2303,6 +2388,10 @@ img {
 }
 
 .email-invalid {
+  color: var(--status-error);
+}
+
+.adress-invalid {
   color: var(--status-error);
 }
 

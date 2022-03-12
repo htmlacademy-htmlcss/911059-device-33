@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="icon" href="favicon.ico"/>
+  <link rel="icon" href="favicon.ico" />
   <link rel="shortcut icon" href="images/favicon/favicon.png" sizes="32x32" type="image/x-icon" />
   <title>HTML Academy: Девайс</title>
 </head>
@@ -46,7 +46,7 @@
                 <ul class="popover-cart-list">
                   <li class="popover-cart-item">
                     <a class="popover-cart-item-link" href="#">
-                      <img src="images/product/for-cart/product-1-small.jpg" alt="Любительская селфи-палка" width="39"
+                      <img src="images/product/for-cart/product-1-small.jpg" alt="Любительская селфи-палка." width="39"
                         height="44" />
                       <p class="popover-cart-item-title">
                         Любительская селфи-палка
@@ -58,7 +58,7 @@
                   </li>
                   <li class="popover-cart-item">
                     <a class="popover-cart-item-link" href="#">
-                      <img src="images/product/for-cart/product-2-small.jpg" alt="Профессиональная селфи-палка"
+                      <img src="images/product/for-cart/product-2-small.jpg" alt="Профессиональная селфи-палка."
                         width="39" height="44" />
                       <p class="popover-cart-item-title">
                         Профессиональная селфи-палка
@@ -150,6 +150,23 @@
         <h2 class="visually-hidden">Превью устройства</h2>
         <div class="preview-wrap">
           <div class="wrap-slide">
+            <ul class="slider-content-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-btn slider-pagination-btn--current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-btn" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-btn" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ul>
             <div class="slide slide--show">
               <div class="slide-img">
                 <img src="images/preview/slider-1.png" width="560" height="560"
@@ -242,32 +259,15 @@
           </div>
           <div class="preview-controls">
             <div class="slider-btn-control">
-              <button class="slider-btn-prev">
+              <button class="slider-btn-prev" type="button">
                 <span class="visually-hidden">Предыдущий</span>
               </button>
-              <button class="slider-btn-next">
+              <button class="slider-btn-next" type="button">
                 <span class="visually-hidden">Следующий</span>
               </button>
             </div>
             <div class="slider-counter-control">
               <span class="slider-counter">01</span>
-              <ul class="slider-content-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-btn slider-pagination-btn--current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-btn" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-btn" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -378,11 +378,10 @@
       </div>
     </section>
     <div class="container" id="delivery">
-      <a class="delivery">
-        <span class="delivery-icon"></span>
-        <p class="delivery-text">Доставим редкий товар под заказ</p>
-        <span class="delivery-info"></span>
-      </a>
+      <article class="delivery_article">
+        <h2 class="visually-hidden">Доставка заказа</h2>
+        <a class="delivery delivery_article_description" href="#">Доставим редкий товар под заказ</a>
+      </article>
     </div>
 
     <div class="container">
@@ -554,7 +553,7 @@
       <div class="modal-content">
         <div class="modal-row">
           <h2 class="modal-title title">Доставка под заказ</h2>
-          <button class="modal-btn-close">
+          <button class="modal-btn-close" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
@@ -582,7 +581,10 @@
               <label class="modal-label" for="product">
                 Что нужно привезти:
               </label>
-              <input class="modal-input" type="text" name="product" id="product" placeholder="В свободной форме" />
+              <input class="modal-input" type="text" name="product" id="product" required
+                placeholder="В свободной форме" />
+              <span class="modal-input-icon"></span>
+              <p class="value-invalid adress-invalid">Что же вам привезти?</p>
             </div>
             <div class="modal-column">
               <div class="number-product">
