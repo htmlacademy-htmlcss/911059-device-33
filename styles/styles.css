@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
@@ -103,7 +102,8 @@ body.lock {
 
 img {
   max-width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 
@@ -273,6 +273,8 @@ img {
   display: flex;
   align-items: center;
   padding: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -497,6 +499,26 @@ img {
   letter-spacing: 0.02em;
 }
 
+.input-search::-webkit-input-placeholder {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.input-search::-moz-placeholder {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.input-search:-ms-input-placeholder {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.input-search::-ms-input-placeholder {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 .input-search::placeholder {
   color: var(--basic-black);
   opacity: 0.3;
@@ -623,18 +645,11 @@ img {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin: 0 -13.5px;
+  margin: 0 -22.5px;
   padding: 0;
-  flex-wrap: inherit;
+  flex-wrap: wrap;
 }
 
-.main-nav-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  width: auto;
-  margin: 0px;
-  padding: 0;
-}
 
 .main-nav-item {
   padding: 0 22.5px;
@@ -885,7 +900,9 @@ img {
   padding: 0 5px;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   color: var(--alfa3-black);
 }
 
@@ -895,7 +912,8 @@ img {
 
 .price-value::-webkit-outer-spin-button,
 .price-value::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1017,7 +1035,9 @@ img {
 .select-control {
   border: none;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: transparent url("../images/icon/select.svg") no-repeat right top 12px;
   padding-right: 41px;
   margin-right: 12px;
@@ -1856,6 +1876,22 @@ img {
   border-color: var(--status-error);
 }
 
+.newsletter-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.newsletter-input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.newsletter-input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.newsletter-input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
 .newsletter-input::placeholder {
   opacity: 0.5;
 }
@@ -2154,13 +2190,16 @@ img {
 }
 
 .modal-input-number {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   pointer-events: none;
 }
 
 .modal-input-number::-webkit-outer-spin-button,
 .modal-input-number::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .modal-input:hover {
@@ -2195,6 +2234,34 @@ img {
 
 .modal-input[id="user-name"]:focus:invalid~.name-invalid {
   opacity: 1;
+}
+
+.modal-input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.modal-input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.modal-input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.modal-input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+  color: var(--basic-black);
 }
 
 .modal-input::placeholder {
@@ -2412,6 +2479,8 @@ img {
   margin: 0;
   line-height: 20px;
   display: inline-flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
